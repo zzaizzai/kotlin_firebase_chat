@@ -6,6 +6,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import com.google.firebase.auth.FirebaseAuth
 
 class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,6 +20,8 @@ class LoginActivity : AppCompatActivity() {
 
         btnLogin.setOnClickListener {
             Log.d("Login", "email: ${email.text.toString()}, password:${password.text.toString()}")
+
+            FirebaseAuth.getInstance().signInWithEmailAndPassword(email.text.toString(), password.text.toString())
         }
 
         backToRegistration.setOnClickListener {
