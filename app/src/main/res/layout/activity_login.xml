@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#86E47B"
+    android:background="#8B60B161"
     tools:context=".LoginActivity">
 
     <EditText
@@ -12,13 +12,13 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
-        android:background="@color/white"
+        android:background="@drawable/rounded_edittext"
         android:ems="10"
-        android:paddingLeft="20dp"
         android:hint="Email"
         android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,7 +28,7 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
-        android:background="@color/white"
+        android:background="@drawable/rounded_edittext"
         android:ems="10"
         android:paddingLeft="20dp"
         android:hint="password"
@@ -42,8 +42,11 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_btn"
         android:text="Login"
+        android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="@+id/login_et_password"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/login_et_password"
         app:layout_constraintTop_toBottomOf="@+id/login_et_password" />
 
