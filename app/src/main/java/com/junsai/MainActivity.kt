@@ -7,6 +7,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +24,14 @@ class MainActivity : AppCompatActivity() {
         register.setOnClickListener {
             Log.d("MainActivity", "Email is :" + email.text.toString())
             Log.d("MainActivity", "Password:" + password.text.toString())
+            FirebaseAuth.getInstance().createUserWithEmailAndPassword(email.text.toString(), password.text.toString())
+                .addOnCompleteListener{
+                    if (!it.isSuccessful) return@addOnCompleteListener
+
+                    Log.d("Main", "Successfully created user with uid: ${it.result.user?.uid}")
+
+
+                }
 
         }
 

@@ -1,2 +1,5 @@
 # kotlin_firebase_chat
-good
+Kotlin 
+Firebase
+
+for study
