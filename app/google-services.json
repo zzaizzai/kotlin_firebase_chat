@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1064643075582",
+    "project_id": "kotlin-d5ea5",
+    "storage_bucket": "kotlin-d5ea5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064643075582:android:6df3e86662a83bd22334af",
+        "android_client_info": {
+          "package_name": "com.junsai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1064643075582-8fib6vstep3flm0gplebh2dbu6vg8qh1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjPvgdO1PE_5IVqHKMvarhkXg6iM19VXI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1064643075582-8fib6vstep3flm0gplebh2dbu6vg8qh1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
